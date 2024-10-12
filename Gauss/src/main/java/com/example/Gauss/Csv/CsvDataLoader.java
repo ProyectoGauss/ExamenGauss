@@ -1,4 +1,4 @@
-package com.example.Gauss;
+package com.example.Gauss.Csv;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
 @Service
-public class CsvDataervice {
+public class CsvDataLoader {
 
     @Autowired
     private CsvDataRepository csvDataRepository;
@@ -24,12 +24,11 @@ public class CsvDataervice {
 
             for (CSVRecord csvRecord : csvParser) {
                 CsvData csvData = new CsvData();
-                csvData.setColumn1(csvRecord.get("edad"));
-                csvData.setColumn2(csvRecord.get("altura"));
-                csvData.setColumn3(csvRecord.get("peso"));
-                csvData.setColumn4(csvRecord.get("nota"));
-                csvData.setColumn5(csvRecord.get("genero"));
-
+                csvData.setEdad(Double.parseDouble(csvRecord.get("edad")));
+                csvData.setAltura(Double.parseDouble(csvRecord.get("altura")));
+                csvData.setPeso(Double.parseDouble(csvRecord.get("peso")));
+                csvData.setNota(Double.parseDouble(csvRecord.get("nota")));
+                csvData.setGenero(csvRecord.get("genero"));
 
                 csvDataRepository.save(csvData);
             }
