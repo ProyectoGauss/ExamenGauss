@@ -1,5 +1,10 @@
 # ExamenGauss
 
+Proyecto realizado por: 
+- Arturo lópez-castaño
+- 
+
+
 url = https://github.com/ProyectoGauss/ExamenGauss.git
 
 El proyecto es una aplicación web basada en Spring Boot que maneja la importación de datos CSV y una simulación de caída de bolas. A continuación, se describen las principales clases y sus funciones:
