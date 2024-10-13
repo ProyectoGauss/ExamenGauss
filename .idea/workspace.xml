@@ -8,17 +8,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c249ed2b-4c4d-4f86-ac94-4f97241e4f0f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/FactorySimulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/WorkStation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/distribution.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/AssemblyLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/SimulationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gauss/src/main/resources/templates/falling-balls.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gauss/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gauss/src/main/resources/templates/simulation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/AssemblyLine.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/FactorySimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/FactorySimulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/WorkStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/WorkStation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/distribution.js" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/js/distribution.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/js/table.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -86,6 +90,7 @@
       <recent name="com.example.Gauss" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Arturo Uni\IdeaProjects\Nueva carpeta\ExamenGauss\Gauss\src\main\java\com\example\Gauss\js" />
       <recent name="C:\Users\Arturo Uni\IdeaProjects\Nueva carpeta\ExamenGauss\Gauss\src\main\resources\static" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -133,7 +138,7 @@
       <updated>1728727793503</updated>
       <workItem from="1728727794380" duration="1613000" />
       <workItem from="1728729924389" duration="1715000" />
-      <workItem from="1728731671562" duration="15391000" />
+      <workItem from="1728731671562" duration="17824000" />
     </task>
     <servers />
   </component>

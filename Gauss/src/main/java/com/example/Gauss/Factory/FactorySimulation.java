@@ -1,4 +1,4 @@
-package com.example.Gauss;
+package com.example.Gauss.Factory;
 
 import com.example.Gauss.Csv.CsvData;
 import com.example.Gauss.Csv.CsvDataRepository;
@@ -16,6 +16,7 @@ public class FactorySimulation {
     @Autowired
     private CsvDataRepository csvDataRepository;
 
+    // This method is used to start the simulation of the factory
     public void startSimulation() {
         List<CsvData> csvDataList = csvDataRepository.findAll();
         BlockingQueue<Component> buffer = new LinkedBlockingQueue<>(10);

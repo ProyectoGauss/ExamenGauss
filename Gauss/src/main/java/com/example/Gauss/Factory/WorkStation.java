@@ -1,4 +1,4 @@
-package com.example.Gauss;
+package com.example.Gauss.Factory;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Semaphore;
@@ -8,12 +8,15 @@ public class WorkStation extends Thread {
     private final String componentName;
     private final Semaphore semaphore;
 
+    //constructor de la clase
     public WorkStation(BlockingQueue<Component> buffer, String componentName, Semaphore semaphore) {
         this.buffer = buffer;
         this.componentName = componentName;
         this.semaphore = semaphore;
     }
 
+
+    //este metodo es el que se encarga de producir los componentes
     @Override
     public void run() {
         try {

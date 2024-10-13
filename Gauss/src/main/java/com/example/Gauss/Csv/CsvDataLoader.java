@@ -18,6 +18,9 @@ public class CsvDataLoader {
     private CsvDataRepository csvDataRepository;
 
     public void importCsv(MultipartFile file) throws IOException, CsvException {
+        //borra todos los datos de la tabla antes de importar nuevos datos
+        csvDataRepository.deleteAll();
+
         try (BufferedReader fileReader = new BufferedReader(new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8));
              CSVReader csvReader = new CSVReader(fileReader)) {
 
