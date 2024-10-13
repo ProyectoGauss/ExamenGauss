@@ -8,11 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c249ed2b-4c4d-4f86-ac94-4f97241e4f0f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/SimulationRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gauss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataRepository" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataRepository" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/SimulationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/SimulationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/resources/templates/falling-balls.html" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/resources/templates/falling-balls.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -133,7 +135,7 @@
       <workItem from="1728729924389" duration="1715000" />
       <workItem from="1728731671562" duration="18412000" />
       <workItem from="1728811831911" duration="1648000" />
-      <workItem from="1728813494733" duration="2043000" />
+      <workItem from="1728813494733" duration="2889000" />
     </task>
     <servers />
   </component>
