@@ -1,5 +1,6 @@
 package com.example.Gauss.Csv;
 
+import com.opencsv.exceptions.CsvException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,13 +24,14 @@ public class CsvDataController {
         try {
             csvDataService.importCsv(file);
             return ResponseEntity.status(HttpStatus.OK).body("CSV imported successfully");
-        } catch (IOException e) {
+        } catch (IOException | CsvException e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error importing CSV: " + e.getMessage());
         }
     }
 
     @GetMapping("/csv-data")
     public ResponseEntity<List<CsvData>> getCsvData() {
+        List<CsvData> csvDataList = csvDataService.getAllCsvData();
         return ResponseEntity.ok(csvDataList);
     }
 }

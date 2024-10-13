@@ -1,16 +1,15 @@
 package com.example.Gauss.Csv;
 
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVParser;
-import org.apache.commons.csv.CSVRecord;
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 @Service
 public class CsvDataLoader {
@@ -18,17 +17,22 @@ public class CsvDataLoader {
     @Autowired
     private CsvDataRepository csvDataRepository;
 
-    public void importCsv(MultipartFile file) throws IOException {
+    public void importCsv(MultipartFile file) throws IOException, CsvException {
         try (BufferedReader fileReader = new BufferedReader(new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8));
-             CSVParser csvParser = new CSVParser(fileReader, CSVFormat.DEFAULT.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim())) {
+             CSVReader csvReader = new CSVReader(fileReader)) {
 
-            for (CSVRecord csvRecord : csvParser) {
+            List<String[]> records = csvReader.readAll();
+            String[] header = records.get(0);
+            records.remove(0);
+
+            for (String[] record : records) {
                 CsvData csvData = new CsvData();
-                csvData.setEdad(Double.parseDouble(csvRecord.get("edad")));
-                csvData.setAltura(Double.parseDouble(csvRecord.get("altura")));
-                csvData.setPeso(Double.parseDouble(csvRecord.get("peso")));
-                csvData.setNota(Double.parseDouble(csvRecord.get("nota")));
-                csvData.setGenero(csvRecord.get("genero"));
+                csvData.setId(Long.parseLong(record[0]));
+                csvData.setEdad(Double.parseDouble(record[1]));
+                csvData.setAltura(Double.parseDouble(record[2]));
+                csvData.setPeso(Double.parseDouble(record[3]));
+                csvData.setNota(Double.parseDouble(record[4]));
+                csvData.setGenero(record[5]);
 
                 csvDataRepository.save(csvData);
             }

@@ -8,15 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c249ed2b-4c4d-4f86-ac94-4f97241e4f0f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/FactorySimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/WorkStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/distribution.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/CsvData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/CsvDataControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/CsvDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/CsvDataRepository" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataRepository" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/CsvDataervice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,6 +82,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.Gauss" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Arturo Uni\IdeaProjects\Nueva carpeta\ExamenGauss\Gauss\src\main\resources\static" />
     </key>
@@ -127,7 +133,7 @@
       <updated>1728727793503</updated>
       <workItem from="1728727794380" duration="1613000" />
       <workItem from="1728729924389" duration="1715000" />
-      <workItem from="1728731671562" duration="5671000" />
+      <workItem from="1728731671562" duration="15391000" />
     </task>
     <servers />
   </component>
