@@ -8,28 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c249ed2b-4c4d-4f86-ac94-4f97241e4f0f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Config/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/CustomScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Assembly/AssemblyConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Component/ComponentConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Component/ComponentProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/WorkstationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/WorkstationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/SharedMemoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/js/Visualization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/AssemblyLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Assembly/AssemblyLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Component/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/FactorySimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/FactorySimulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/WorkStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Workstation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/SimulationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Controller/SimulationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/SimulationRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Controller/SimulationRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +134,7 @@
       <workItem from="1728731671562" duration="18412000" />
       <workItem from="1728811831911" duration="1648000" />
       <workItem from="1728813494733" duration="6948000" />
-      <workItem from="1730112786123" duration="7225000" />
+      <workItem from="1730112786123" duration="7650000" />
     </task>
     <servers />
   </component>
