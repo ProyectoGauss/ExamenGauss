@@ -1,4 +1,3 @@
-
 package com.example.Gauss.Factory.Component;
 
 import com.example.Gauss.Config.RabbitMQConfig;
@@ -12,8 +11,8 @@ public class ComponentProducer {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
-    public void produceComponent(String componentName) {
-        rabbitTemplate.convertAndSend(RabbitMQConfig.COMPONENT_QUEUE, componentName);
+    public void produceComponent(String queueName, String componentName) {
+        rabbitTemplate.convertAndSend(queueName, componentName);
     }
 }
 

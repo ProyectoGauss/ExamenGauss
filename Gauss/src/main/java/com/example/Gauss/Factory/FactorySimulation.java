@@ -30,7 +30,7 @@ public class FactorySimulation {
         for (CsvData data : csvDataList) {
             String componentName = "Component from CSV: " + data.getId();
             try {
-                componentProducer.produceComponent(componentName);
+                componentProducer.produceComponent(componentName, componentName);
                 logger.info("Produced component: {}", componentName);
             } catch (Exception e) {
                 logger.error("Failed to produce component: {}", componentName, e);
