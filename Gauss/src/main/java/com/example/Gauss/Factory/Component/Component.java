@@ -1,4 +1,4 @@
-package com.example.Gauss.Factory;
+package com.example.Gauss.Factory.Component;
 
 
 // This class represents a component that is used in the factory

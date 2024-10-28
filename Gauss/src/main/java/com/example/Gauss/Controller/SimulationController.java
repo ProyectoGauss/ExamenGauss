@@ -1,4 +1,4 @@
-package com.example.Gauss;
+package com.example.Gauss.Controller;
 
 import com.example.Gauss.Factory.FactorySimulation;
 import org.springframework.beans.factory.annotation.Autowired;

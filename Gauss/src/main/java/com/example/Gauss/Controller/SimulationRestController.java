@@ -1,4 +1,4 @@
-package com.example.Gauss;
+package com.example.Gauss.Controller;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.GetMapping;

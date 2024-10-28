@@ -1,4 +1,6 @@
-package com.example.Gauss.Factory;
+package com.example.Gauss.Factory.Assembly;
+
+import com.example.Gauss.Factory.Component.Component;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Semaphore;
