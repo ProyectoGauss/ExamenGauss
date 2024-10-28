@@ -1,9 +1,5 @@
 # ExamenGauss
 
-Proyecto realizado por: 
-- Arturo lópez-castaño
-- Mamoun benboujida
-
 
 url = https://github.com/ProyectoGauss/ExamenGauss.git
 
