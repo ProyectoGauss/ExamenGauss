@@ -17,12 +17,12 @@ import java.util.List;
 public class CsvDataController {
 
     @Autowired
-    private CsvDataService csvDataService;
+    private CsvService csvService;
 
     @PostMapping("/import-csv")
     public ResponseEntity<String> importCsv(@RequestParam("file") MultipartFile file) {
         try {
-            csvDataService.importCsv(file);
+            csvService.importCsv(file);
             return ResponseEntity.status(HttpStatus.OK).body("CSV imported successfully");
         } catch (IOException | CsvException e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error importing CSV: " + e.getMessage());
@@ -31,7 +31,7 @@ public class CsvDataController {
 
     @GetMapping("/csv-data")
     public ResponseEntity<List<CsvData>> getCsvData() {
-        List<CsvData> csvDataList = csvDataService.getAllCsvData();
+        List<CsvData> csvDataList = csvService.getAllCsvData();
         return ResponseEntity.ok(csvDataList);
     }
 }

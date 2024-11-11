@@ -3,9 +3,6 @@ package com.example.Gauss.Csv;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-/**
- * Repository interface for accessing CSV data.
- */
 @Repository
-public interface CsvDataRepository extends JpaRepository<CsvData, Long> {
+public interface CsvRepository extends JpaRepository<CsvData, Long> {
 }

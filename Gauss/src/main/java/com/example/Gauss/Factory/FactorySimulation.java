@@ -1,7 +1,7 @@
 package com.example.Gauss.Factory;
 
 import com.example.Gauss.Csv.CsvData;
-import com.example.Gauss.Csv.CsvDataRepository;
+import com.example.Gauss.Csv.CsvRepository;
 import com.example.Gauss.Factory.Component.ComponentProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +15,7 @@ public class FactorySimulation {
     private static final Logger logger = LoggerFactory.getLogger(FactorySimulation.class);
 
     @Autowired
-    private CsvDataRepository csvDataRepository;
+    private CsvRepository csvRepository;
 
     @Autowired
     private ComponentProducer componentProducer;
@@ -25,7 +25,7 @@ public class FactorySimulation {
      * It reads data from the CSV repository and produces components.
      */
     public void startSimulation() {
-        List<CsvData> csvDataList = csvDataRepository.findAll();
+        List<CsvData> csvDataList = csvRepository.findAll();
 
         for (CsvData data : csvDataList) {
             String componentName = "Component from CSV: " + data.getId();

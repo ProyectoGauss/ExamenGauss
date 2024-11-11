@@ -15,11 +15,11 @@ import java.util.List;
 public class CsvDataLoader {
 
     @Autowired
-    private CsvDataRepository csvDataRepository;
+    private CsvRepository csvRepository;
 
     public void importCsv(MultipartFile file) throws IOException, CsvException {
         //borra todos los datos de la tabla antes de importar nuevos datos
-        csvDataRepository.deleteAll();
+        csvRepository.deleteAll();
 
         try (BufferedReader fileReader = new BufferedReader(new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8));
              CSVReader csvReader = new CSVReader(fileReader)) {
@@ -37,7 +37,7 @@ public class CsvDataLoader {
                 csvData.setNota(Double.parseDouble(record[4]));
                 csvData.setGenero(record[5]);
 
-                csvDataRepository.save(csvData);
+                csvRepository.save(csvData);
             }
         }
     }

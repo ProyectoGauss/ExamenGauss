@@ -8,19 +8,19 @@ import java.io.IOException;
 import java.util.List;
 
 @Service
-public class CsvDataService {
+public class CsvService {
 
     @Autowired
     private CsvDataLoader csvDataLoader;
 
     @Autowired
-    private CsvDataRepository csvDataRepository;
+    private CsvRepository csvRepository;
 
     public void importCsv(MultipartFile file) throws IOException, CsvException {
         csvDataLoader.importCsv(file);
     }
 
     public List<CsvData> getAllCsvData() {
-        return csvDataRepository.findAll();
+        return csvRepository.findAll();
     }
 }
