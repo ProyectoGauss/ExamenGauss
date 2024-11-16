@@ -9,8 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c249ed2b-4c4d-4f86-ac94-4f97241e4f0f" name="Changes" comment="arreglos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Rabbit/SharedMemoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Rabbit/SharedMemoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/js/Visualization.js" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/js/Visualization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,7 @@
       <workItem from="1731351643876" duration="510000" />
       <workItem from="1731352400741" duration="1835000" />
       <workItem from="1731354368866" duration="4334000" />
-      <workItem from="1731754568187" duration="11857000" />
+      <workItem from="1731754568187" duration="13572000" />
     </task>
     <task id="LOCAL-00001" summary="arreglos">
       <option name="closed" value="true" />
