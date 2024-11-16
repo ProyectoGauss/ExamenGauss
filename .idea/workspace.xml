@@ -8,12 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c249ed2b-4c4d-4f86-ac94-4f97241e4f0f" name="Changes" comment="arreglos">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Rabbit/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Rabbit/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +139,7 @@
       <workItem from="1731354368866" duration="4334000" />
       <workItem from="1731754568187" duration="13572000" />
       <workItem from="1731773501610" duration="1115000" />
+      <workItem from="1731774771985" duration="2698000" />
     </task>
     <task id="LOCAL-00001" summary="arreglos">
       <option name="closed" value="true" />
