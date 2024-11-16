@@ -8,9 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c249ed2b-4c4d-4f86-ac94-4f97241e4f0f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Controller/WebFluxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gauss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gauss/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +66,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.GaussApplication.executor": "Run",
     "git-widget-placeholder": "main",
@@ -111,8 +114,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
@@ -134,6 +137,8 @@
       <workItem from="1731342443314" duration="622000" />
       <workItem from="1731351643876" duration="510000" />
       <workItem from="1731352400741" duration="1835000" />
+      <workItem from="1731354368866" duration="4334000" />
+      <workItem from="1731754568187" duration="3932000" />
     </task>
     <servers />
   </component>

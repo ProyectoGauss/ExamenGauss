@@ -8,3 +8,22 @@ services:
       - 'MYSQL_USER=myuser'
     ports:
       - '3307:3306'
+    volumes:
+      - 'mysql_data:/var/lib/mysql'
+    networks:
+      - 'campana-network'
+
+  rabbitmq:
+    image: 'rabbitmq:3-management'
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    networks:
+      - 'campana-network'
+
+networks:
+  campana-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
