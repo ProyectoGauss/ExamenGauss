@@ -35,6 +35,7 @@
     var stompClient = Stomp.over(socket);
 
     stompClient.connect({}, function (frame) {
+        console.log('Connected: ' + frame);
         stompClient.subscribe('/topic/balls', function (message) {
             var data = JSON.parse(message.body);
             chart.data.datasets[0].data = data;

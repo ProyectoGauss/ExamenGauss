@@ -42,17 +42,6 @@ public class SharedMemoryService {
             // Retrieve all CSV data from the repository
             List<CsvData> allData = csvRepository.findAll();
 
-            // Calculate the mean and standard deviation
-            double mean = allData.stream().collect(Collectors.averagingDouble(CsvData::getNota));
-            double variance = allData.stream().mapToDouble(d -> Math.pow(d.getNota() - mean, 2)).sum() / allData.size();
-            double stdDev = Math.sqrt(variance);
-
-            // Apply the Gaussian function to the data
-            double gaussValue = (1 / (stdDev * Math.sqrt(2 * Math.PI))) * Math.exp(-Math.pow(csvData.getNota() - mean, 2) / (2 * Math.pow(stdDev, 2)));
-
-            // Example operation: update the nota field with the Gaussian value
-            csvData.setNota(gaussValue);
-
             // Save the processed data to the database
             csvRepository.save(csvData);
 

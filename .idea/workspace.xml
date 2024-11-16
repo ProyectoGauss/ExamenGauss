@@ -8,29 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c249ed2b-4c4d-4f86-ac94-4f97241e4f0f" name="Changes" comment="arreglos">
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Assembly/AssemblyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/WebSocketConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Rabbit/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Config/WebSocketConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Controller/VisualizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Controller/VisualizationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvDataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Csv/CsvRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/CustomScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/SchedulingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Assembly/AssemblyConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Assembly/AssemblyConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Assembly/AssemblyLine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Component/Component.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Component/ComponentConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Component/ComponentProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Component/ComponentProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/FactorySimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/FactorySimulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Workstation/Workstation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Workstation/WorkstationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Workstation/WorkstationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Workstation/WorkstationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Factory/Workstation/WorkstationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/GaussApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/SharedMemoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Rabbit/SharedMemoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Rabbit/SharedMemoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/java/com/example/Gauss/Rabbit/SharedMemoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Gauss/src/main/resources/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +138,7 @@
       <workItem from="1731351643876" duration="510000" />
       <workItem from="1731352400741" duration="1835000" />
       <workItem from="1731354368866" duration="4334000" />
-      <workItem from="1731754568187" duration="10649000" />
+      <workItem from="1731754568187" duration="11857000" />
     </task>
     <task id="LOCAL-00001" summary="arreglos">
       <option name="closed" value="true" />
