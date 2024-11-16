@@ -1,4 +1,4 @@
-// WorkStationController.java
+
 package com.example.Gauss.Factory.Workstation;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +10,10 @@ import reactor.core.publisher.Flux;
 public class WorkstationController {
 
     @Autowired
-    private WorkstationService workStationService;
+    private WorkstationService workstationService;
 
     @GetMapping("/workstations")
     public Flux<String> getWorkStations() {
-        return workStationService.getWorkStations();
+        return workstationService.getWorkStations();
     }
 }

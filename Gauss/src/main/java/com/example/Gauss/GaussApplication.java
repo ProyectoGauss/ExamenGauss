@@ -1,38 +1,24 @@
 package com.example.Gauss;
 
-import com.example.Gauss.Factory.Component.ComponentProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.web.reactive.config.EnableWebFlux;
 
-/**
- * Main application class for the Gauss simulation.
- */
+import java.util.Arrays;
+
 @SpringBootApplication
-@EnableWebFlux
-@EnableJpaRepositories
 public class GaussApplication implements CommandLineRunner {
 
-	@Autowired
-	private ComponentProducer componentProducer;
+    @Autowired
+    private SchedulingService schedulingService;
 
-	@Autowired
-	private CustomScheduler customScheduler;
+    public static void main(String[] args) {
+        SpringApplication.run(GaussApplication.class, args);
+    }
 
-	/**
-	 * Main method to run the Spring Boot application.
-	 *
-	 * @param args command line arguments
-	 */
-	public static void main(String[] args) {
-		SpringApplication.run(GaussApplication.class, args);
-	}
-
-	@Override
-	public void run(String... args) throws Exception {
-		customScheduler.scheduleTasks();
-	}
+    @Override
+    public void run(String... args) {
+        schedulingService.scheduleProduction(Arrays.asList("Component1", "Component2", "Component3"));
+    }
 }

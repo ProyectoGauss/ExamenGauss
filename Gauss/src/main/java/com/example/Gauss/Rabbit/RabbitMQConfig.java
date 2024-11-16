@@ -1,4 +1,4 @@
-package com.example.Gauss.Config;
+package com.example.Gauss.Rabbit;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;

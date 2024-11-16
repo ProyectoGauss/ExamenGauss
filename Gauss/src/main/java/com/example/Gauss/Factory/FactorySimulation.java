@@ -1,5 +1,6 @@
 package com.example.Gauss.Factory;
 
+import com.example.Gauss.Controller.VisualizationController;
 import com.example.Gauss.Csv.CsvData;
 import com.example.Gauss.Csv.CsvRepository;
 import com.example.Gauss.Factory.Component.ComponentProducer;
@@ -20,10 +21,9 @@ public class FactorySimulation {
     @Autowired
     private ComponentProducer componentProducer;
 
-    /**
-     * This method is used to start the simulation of the factory.
-     * It reads data from the CSV repository and produces components.
-     */
+    @Autowired
+    private VisualizationController visualizationController;
+
     public void startSimulation() {
         List<CsvData> csvDataList = csvRepository.findAll();
 
@@ -36,5 +36,7 @@ public class FactorySimulation {
                 logger.error("Failed to produce component: {}", componentName, e);
             }
         }
+        logger.info("Factory simulation completed.");
+        visualizationController.sendUpdate("Factory simulation completed.");
     }
 }

@@ -1,6 +1,6 @@
 package com.example.Gauss.Factory.Assembly;
 
-import com.example.Gauss.Config.RabbitMQConfig;
+import com.example.Gauss.Rabbit.RabbitMQConfig;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 

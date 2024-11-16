@@ -14,7 +14,6 @@ public class MessageController {
     private int[] bins = new int[10];
 
     @Scheduled(fixedRate = 1000)
-    @Scheduled(fixedRate = 1000)
     public void sendMessage() {
         int position = (int) (Math.random() * bins.length);
         bins[position]++;
