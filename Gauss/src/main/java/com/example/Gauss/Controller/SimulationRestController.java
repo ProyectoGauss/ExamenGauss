@@ -37,9 +37,7 @@ public class SimulationRestController {
         return data;
     }
 
-    /**
-     * Simulates a ball falling into a random bin every second.
-     */
+
     @Scheduled(fixedRate = 1000)
     public void simulateBallFalling() {
         int binIndex = (int) (Math.random() * bins.length);

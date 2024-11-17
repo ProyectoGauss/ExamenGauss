@@ -5,9 +5,15 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sockjs-client"></script>
     <script src="https://cdn.jsdelivr.net/npm/stompjs"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
 <canvas id="myChart" width="400" height="200"></canvas>
+<div id="distribucion-chart"></div>
+<div id="table-container"></div>
+<script src="/js/Visualization.js"></script>
+<script src="/js/table.js"></script>
+<script src="/js/distribution.js"></script>
 <script>
     var ctx = document.getElementById('myChart').getContext('2d');
     var chart = new Chart(ctx, {
@@ -36,8 +42,9 @@
 
     stompClient.connect({}, function (frame) {
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/balls', function (message) {
+        stompClient.subscribe('/topic/messages', function (message) {
             var data = JSON.parse(message.body);
+            console.log("Data recieved:", data);
             chart.data.datasets[0].data = data;
             chart.update();
         });
