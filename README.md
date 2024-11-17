@@ -1,72 +1,81 @@
 # ExamenGauss
 
+# Parcial 2 hecho por: Arturo López y Roberto Quílez
 
 url = https://github.com/ProyectoGauss/ExamenGauss.git
 
-El proyecto es una aplicación web basada en Spring Boot que maneja la importación de datos CSV y una simulación de caída de bolas. A continuación, se describen las principales clases y sus funciones:
+# Proyecto Máquina de Galton
 
-### Clases relacionadas con CSV
+Este proyecto implementa una Máquina de Galton con visualización en tiempo real, generación y carga de datos CSV, y un tablero de visualización gradual. El proyecto está dividido en dos partes: el backend y el frontend.
 
-1. **`CsvData`**:
-   - Es una entidad JPA que representa los datos del CSV.
-   - Contiene campos como `id`, `edad`, `altura`, `peso`, `nota` y `genero`.
+## Backend
 
-2. **`CsvDataRepository`**:
-   - Es una interfaz que extiende `JpaRepository` para proporcionar métodos CRUD para la entidad `CsvData`.
+### Tecnologías Utilizadas
+- Java
+- Spring Boot
+- Maven
+- OpenCSV
+- WebSocket
+- RabbitMQ
 
-3. **`CsvDataLoader`**:
-   - Es un servicio que maneja la lógica de importación de archivos CSV.
-   - Lee el archivo CSV, borra los datos existentes en la base de datos y guarda los nuevos datos.
+### Estructura del Proyecto
+- `src/main/java/com/example/Gauss`
+  - `Csv`: Contiene las clases relacionadas con la importación y manejo de datos CSV.
+  - `WebSocketConfig.java`: Configuración de WebSocket.
+  - `WebSocketController.java`: Controlador para manejar mensajes WebSocket.
+  - `CsvDataController.java`: Controlador para manejar la importación y recuperación de datos CSV.
+  - `CsvService.java`: Servicio para manejar la lógica de importación y recuperación de datos CSV.
+  - `CsvData.java`: Clase de modelo para representar los datos CSV.
 
-4. **`CsvDataService`**:
-   - Es un servicio que utiliza `CsvDataLoader` y `CsvDataRepository` para importar datos CSV y obtener todos los datos CSV.
+### Configuración de WebSocket
+Configura el broker de mensajes y los endpoints de WebSocket para la comunicación en tiempo real.
 
-5. **`CsvDataController`**:
-   - Es un controlador REST que expone endpoints para importar archivos CSV y obtener datos CSV.
+### Controlador de Datos CSV
+Maneja las solicitudes para importar datos CSV y recuperar los datos importados.
 
-### Clases relacionadas con la simulación
+### Servicio de Datos CSV
+Implementa la lógica para importar datos desde un archivo CSV y recuperar los datos importados.
 
-1. **`SimulationController`**:
-   - Es un controlador que maneja las solicitudes web relacionadas con la simulación.
-   - Proporciona endpoints para la página de inicio, iniciar la simulación y mostrar la página de simulación de caída de bolas.
+### Modelo de Datos CSV
+Define la estructura de los datos CSV.
 
-2. **`SimulationRestController`**:
-   - Es un controlador REST que proporciona datos en tiempo real para la simulación de caída de bolas.
-   - Simula la caída de bolas en intervalos regulares y actualiza los datos de los contenedores.
+## Frontend
 
-### Clases relacionadas con la fábrica
+### Tecnologías Utilizadas
+- HTML
+- CSS
+- JavaScript
+- D3.js
+- Chart.js
+- SockJS
+- STOMP.js
 
-1. **`FactorySimulation`**:
-   - Es un servicio que simula la producción de componentes en una fábrica.
-   - Lee datos del repositorio CSV y produce componentes utilizando `ComponentProducer`.
-   - Ensambla componentes utilizando `AssemblyProducer`.
+### Estructura del Proyecto
+- `src/main/resources/static`
+  - `index.html`: Página principal con la interfaz de usuario.
+  - `js/Visualization.js`: Script para la visualización de datos.
+  - `js/table.js`: Script para manejar la tabla de datos.
+  - `js/distribution.js`: Script para manejar la distribución de datos.
 
-2. **`AssemblyConsumer`**:
-   - Es un servicio que consume mensajes de una cola de RabbitMQ relacionada con la ensambladura de componentes.
-   - Procesa los nombres de los componentes ensamblados.
+### Página Principal (`index.html`)
+Define la estructura de la página con elementos HTML y estilos CSS.
 
-   3. **`ComponentProducer`**:
-    - Es un servicio que produce mensajes en una cola de RabbitMQ relacionada con la producción de componentes.
-    - Lee datos del repositorio CSV y produce componentes.
-    - Envía mensajes a la cola de RabbitMQ para ensamblar componentes.
-   4. **`ComponentConsumer`**:
-    - Es un servicio que consume mensajes de una cola de RabbitMQ relacionada con la producción de componentes.
-    - Procesa los nombres de los componentes producidos.
-    - Envía mensajes a la cola de RabbitMQ para ensamblar componentes.
+### Script de Visualización (`Visualization.js`)
+Implementa la lógica para generar y guardar CSV, cargar datos desde CSV a la base de datos, y visualizar el tablero de Galton en tiempo real.
 
-1. **`RabbitMQConfig`**:
-   - Es una clase de configuración que define las colas, intercambios y enlaces de RabbitMQ.
-   - Configura las colas `COMPONENT_QUEUE` y `ASSEMBLY_QUEUE`.
+## Instrucciones de Ejecución
 
-### Archivo `pom.xml`
+### Backend
+1. Clona el repositorio.
+2. Navega al directorio del proyecto.
+3. Ejecuta `mvn clean install` para construir el proyecto.
+4. Ejecuta `mvn spring-boot:run` para iniciar el servidor.
 
-- Define las dependencias del proyecto, como `spring-boot-starter-data-jpa`, `spring-boot-starter-web`, `opencsv`, `mysql-connector-j`, entre otras.
-- Configura el plugin de Maven para Spring Boot.
+### Frontend
+1. Abre el archivo `index.html` en un navegador web.
+2. Interactúa con la interfaz para generar y cargar datos CSV, y visualizar el tablero de Galton.
 
-### Archivo `simulation.html`
-
-- Es una página HTML que utiliza D3.js para visualizar la simulación de la caída de bolas.
-- Actualiza el gráfico en intervalos regulares para mostrar la distribución de las bolas en los contenedores.
-
-Este proyecto combina la importación y manipulación de datos CSV con una simulación visual interactiva, utilizando Spring Boot para la lógica del servidor y D3.js para la visualización en el cliente.
+## Notas
+- Asegúrate de que el backend esté corriendo antes de interactuar con el frontend.
+- Verifica que las URLs en las solicitudes `fetch` del frontend apunten correctamente al backend.
 
